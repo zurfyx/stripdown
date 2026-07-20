@@ -2,7 +2,7 @@
 
 Convert Markdown to **unstyled** rich text and copy it to your clipboard. The output preserves structure (headings, lists, tables, code, links) but carries no opinionated fonts, colors, or sizes — paste it anywhere and it inherits the destination's styling.
 
-Live: https://stripdown.github.io/
+Live: https://stripdown.vercel.app/
 
 ## Stack
 
@@ -24,7 +24,7 @@ pnpm build        # static site → dist/
 
 ## Deploy
 
-Pushes to `main` build and publish to GitHub Pages via `.github/workflows/deploy.yml`. CI on every push and PR runs lint, typecheck, test, and build via `.github/workflows/ci.yml`.
+Hosted on Vercel. Pushes to `main` deploy to production; pull requests get preview deployments. Build settings live in `vercel.json`. CI on every push and PR runs lint, typecheck, test, and build via `.github/workflows/ci.yml`.
 
 ## License
 
